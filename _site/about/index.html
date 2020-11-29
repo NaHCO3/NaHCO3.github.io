@@ -181,10 +181,17 @@
 <div class="container">
 	<div class="row">
         
-<!-- NO SIDEBAR -->
+
+<!-- USE SIDEBAR -->
     <!-- PostList Container -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 postlist-container">
-                <!-- Language Selector -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			<!-- Language Selector -->
 <!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
@@ -264,30 +271,82 @@
 
 
 
-            </div>
+    		</div>
     <!-- Sidebar Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
                 <!-- Featured Tags -->
                 
                 <section>
-                    <!-- no hr -->
+                    <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
+                        
                             
-        				
+                                <a href="/tags/#笔记" title="笔记" rel="1">
+                                    笔记
+                                </a>
                             
-        				
+                        
                             
-        				
-        			</div>
+                                <a href="/tags/#肥宅" title="肥宅" rel="1">
+                                    肥宅
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#无病呻吟" title="无病呻吟" rel="1">
+                                    无病呻吟
+                                </a>
+                            
+                        
+                    </div>
                 </section>
                 
 
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                            <a href="/about">
+                                <img src="/img/avatar_binggan.jpg"/>
+                            </a>
+                        
+                        
+                            <p>test</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            <!-- add jianshu add target = "_blank" to <a> by BY -->
+                            
+                            
+                            
+                            
+                            
+                            
+                            <li>
+                                <a target="_blank" href="https://github.com/NaHCO3">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                        
+                            <p>✉️ 暂无</p>
+                        
+                    </div>
+                </section>
                 <!-- Friends Blog -->
                 
                 <hr>
@@ -298,7 +357,7 @@
                     
                 </ul>
                 
-            </div>
+    		</div>
         
 	</div>
 </div>
